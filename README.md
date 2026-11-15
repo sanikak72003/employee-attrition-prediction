@@ -1,9 +1,13 @@
 # Employee Attrition Prediction
 
+
+
 ## Project Overview
 This project uses machine learning to predict whether an employee is likely to leave an organization based on factors such as job satisfaction, income, work experience, overtime, and work environment.
 
 The project includes exploratory data analysis, data preprocessing, model training, evaluation, and a Streamlit web application for making predictions.
+
+
 
 ## Technologies Used
 - Python
@@ -13,6 +17,8 @@ The project includes exploratory data analysis, data preprocessing, model traini
 - XGBoost
 - Streamlit
 - Joblib
+
+
 
 ## Machine Learning Workflow
 1. Data loading and cleaning
@@ -27,16 +33,18 @@ The project includes exploratory data analysis, data preprocessing, model traini
 10. Saving the trained pipeline using Joblib
 11. Streamlit application development
 
+
+
 ## Model Evaluation
-
 The final pipeline achieved the following results on the test set:
-
 - Accuracy: 80.27%
 - Precision (Attrition = Yes): 0.36
 - Recall (Attrition = Yes): 0.62
 - F1-score (Attrition = Yes): 0.45
 
 The dataset is imbalanced, so accuracy alone is not sufficient to evaluate the model. Recall and F1-score for the attrition class are also considered.
+
+
 
 ## Application Features
 - Employee information input form
@@ -45,18 +53,28 @@ The dataset is imbalanced, so accuracy alone is not sufficient to evaluate the m
 - Stay and leave probability estimates
 - Streamlit-based user interface
 
+
+
+## Application Screenshots
+### 1. Application Interface
+![Employee Attrition App](screenshots/app_interface.png)
+### 2. Prediction Result
+![Prediction Result](screenshots/prediction_result.png)
+### 3. Input Validation
+![Input Validation](screenshots/validation.png)
+
+
+
 ## How to Run the Project
 1. Clone the repository.
-
 2. Install the dependencies:
    pip install -r requirements.txt
-
 3. Run the Streamlit application:
    python -m streamlit run app.py
    
 
-## Project Structure
 
+## Project Structure
 Employee Attrition Prediction/
 │
 ├── dataset/
@@ -71,6 +89,7 @@ Employee Attrition Prediction/
 ├── app.py
 ├── requirements.txt
 └── README.md
+
 
 
 ## Disclaimer
